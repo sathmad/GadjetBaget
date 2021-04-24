@@ -58,7 +58,7 @@ public class Product {
 				return "Error while connecting to the database for reading.";
 			}
 			// Prepare the html table to be displayed
-			output = "<table border=\"1\"><tr><th>Product ID</th><th>Product Name</th><th>DATE</th><th>Description</th></tr>";
+			output = "<table border=\"1\"><tr><th>Product ID</th><th>PRODUCT NAME</th><th>DATE</th><th>Description</th></tr>";
 			String query = "select * from product";
 			Statement stmt = (Statement) con.createStatement();
 			ResultSet rs = ((java.sql.Statement) stmt).executeQuery(query);
