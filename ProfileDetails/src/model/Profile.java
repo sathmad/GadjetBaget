@@ -69,7 +69,7 @@ public class Profile {
 						"<th>Customer NIC</th>" +
 						"<th>Customer PhoneNumber</th>" +
 						"<th>Customer Address</th>" +
-						"<th>Update</th><th>Remove</th></tr>";
+						"<th>UPDATE</th><th>Remove</th></tr>";
 
 				String query = "select * from profiles";
 				Statement stmt = con.createStatement();
@@ -90,7 +90,7 @@ public class Profile {
 					output += "<td>" + customerPhoneNum + "</td>";
 					output += "<td>" + customerAddress + "</td>";
 					// buttons
-					output += "<td><input name='btnUpdate' type='button' value='UPDATE'class='btn btn-secondary'></td>"+ "<td><form method='post' action='profiles.jsp'>"+ "<input name='btnRemove' type='submit' value='Remove' class='btn btn-danger'>"+ "<input name='customerID' type='hidden' value='" + customerID+ "'>" + "</form></td></tr>";
+					output += "<td><input name='btnUpdate' type='update' value='update'class='btn btn-secondary'></td>"+ "<td><form method='post' action='profiles.jsp'>"+ "<input name='btnRemove' type='submit' value='Remove' class='btn btn-danger'>"+ "<input name='customerID' type='hidden' value='" + customerID+ "'>" + "</form></td></tr>";
 				}
 				con.close();
 				// Complete the html table
