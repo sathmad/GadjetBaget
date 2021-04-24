@@ -69,7 +69,7 @@ public class Profile {
 						"<th>Customer NIC</th>" +
 						"<th>Customer PhoneNumber</th>" +
 						"<th>Customer Address</th>" +
-						"<th>UPDATE</th><th>Remove</th></tr>";
+						"<th>UPDATE</th><th>DELETE</th></tr>";
 
 				String query = "select * from profiles";
 				Statement stmt = con.createStatement();
