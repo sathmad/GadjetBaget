@@ -90,7 +90,7 @@ public class Profile {
 					output += "<td>" + customerPhoneNum + "</td>";
 					output += "<td>" + customerAddress + "</td>";
 					// buttons
-					output += "<td><input name='btnUpdate' type='button' value='Update'class='btn btn-secondary'></td>"+ "<td><form method='post' action='profiles.jsp'>"+ "<input name='btnRemove' type='submit' value='Remove' class='btn btn-danger'>"+ "<input name='customerID' type='hidden' value='" + customerID+ "'>" + "</form></td></tr>";
+					output += "<td><input name='btnUpdate' type='button' value='UPDATE'class='btn btn-secondary'></td>"+ "<td><form method='post' action='profiles.jsp'>"+ "<input name='btnRemove' type='submit' value='Remove' class='btn btn-danger'>"+ "<input name='customerID' type='hidden' value='" + customerID+ "'>" + "</form></td></tr>";
 				}
 				con.close();
 				// Complete the html table
