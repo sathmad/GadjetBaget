@@ -25,7 +25,7 @@ try
 {
 Connection con = connect();
 if (con == null)
-{return "Error while connecting to the database for inserting."; }
+{return "Error while connecting to the database for inserting.check again"; }
 // create a prepared statement
 String query = " insert into items(`CustomerID`,`CustomerName`,`Amount`,`cardNo`)"
 + " values (?, ?, ?, ?)";
