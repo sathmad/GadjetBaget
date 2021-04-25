@@ -30,7 +30,7 @@ public class Fund {
 	 {
 	 Connection con = connect();
 	 if (con == null)
-	 {return "Error while connecting to the database for inserting."; }
+	 {return "Error while connecting to the database for inserting.check again."; }
 	 // create a prepared statement
 	 String query = " insert into fundtbl(`FundID`,`FirstName`,`LastName`,`NIC`,`Address`)"
 	 + " values (?, ?, ?, ?, ?)";
