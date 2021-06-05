@@ -83,7 +83,7 @@ public class Profile {
 					String customerNIC = rs.getString("customerNIC");
 					String customerPhoneNum = rs.getString("customerPhoneNum");
 					String customerAddress = rs.getString("customerAddress");
-					// Add into the html table
+					// Add data into the html table
 					output += "<tr><td>" + customerName + "</td>";
 					output += "<td>" + customerEmail + "</td>";
 					output += "<td>" + customerNIC + "</td>";
@@ -93,7 +93,7 @@ public class Profile {
 					output += "<td><input name='btnUpdate' type='update' value='update'class='btn btn-secondary'></td>"+ "<td><form method='post' action='profiles.jsp'>"+ "<input name='btnRemove' type='submit' value='Remove' class='btn btn-danger'>"+ "<input name='customerID' type='hidden' value='" + customerID+ "'>" + "</form></td></tr>";
 				}
 				con.close();
-				// Complete the html table
+				// Complete the html table using 
 				output += "</table>";
 			}
 			catch (Exception e)
