@@ -115,8 +115,11 @@ public class Profile {
 				String query = "UPDATE profiles SET customerName=?,customerEmail=?,customerNIC=?,customerPhoneNum=?,customerAddress=?WHERE customerID=?";
 				PreparedStatement preparedStmt = con.prepareStatement(query);
 				// binding values
+				//name
 				preparedStmt.setString(1, name);
+				//email
 				preparedStmt.setString(2, email);
+				//nic
 				preparedStmt.setString(2, nic);
 				preparedStmt.setString(2, phnnumber);
 				preparedStmt.setString(4, address);
